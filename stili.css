@@ -1,0 +1,415 @@
+/* ---------STILI GENERALI--------- */
+
+body {
+  width:100%;
+  margin: 0;
+  height: 100%;
+}
+
+p {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #333;
+}
+
+h1 {
+  font-family: "Pepsi";
+  padding: 0%;
+  margin: 0%;
+}
+
+/* ---------------FONT-------------- */
+
+@font-face {
+  font-family: Pepsi;
+  src: url(/Fonts_progetto_sito/PEPSI_pl.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/Fonts_progetto_sito/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(/Fonts_progetto_sito/Roboto-Medium.ttf);
+}
+
+/*-------------MENU NAVIGAZIONE-------------*/
+
+.header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin-bottom: 10vh;
+  background-color: white;
+  z-index: 2;
+}
+
+.logo {
+  height: 8vh;
+  padding-top: 1vh;
+  padding-left: 5vw;
+}
+
+.menu {
+  line-height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.menu div {
+  font-family: Pepsi;
+  list-style: none;
+  padding: 0;
+  margin-right: 5vw;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu div a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu div a:hover {
+  color: #c9002b;
+  text-decoration: none;
+}
+
+.Pepsi_red {
+  display: inline;
+  color: #c9002b;
+  line-height: 10vh;
+  margin-left: 1vw;
+}
+
+.Jet_blue {
+  display: inline;
+  color: #004b93;
+}
+
+/* ------------------HERO SECTION---------------*/
+.home_hero_section {
+  display: block;
+}
+.immagine_landing {
+  width: 100%;
+  padding-top: 10vh;
+  display: block;
+}
+
+.button {
+  height: 60px;
+  color: white;
+  background-color: #c9002b;
+  margin: none;
+  font-family: Roboto;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+.button:active {
+  background-color: #a20023;
+}
+
+.overlay {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  transform: translate(50%, -50%);
+}
+
+.flex {
+  display: flex;
+}
+
+.image_container {
+  position: relative;
+}
+
+.arrow_icon {
+  height: 30px;
+  padding-top: 15px;
+  padding-right: 1vh;
+}
+
+.button_text {
+  line-height: 60px;
+  padding: 0 1vh;
+}
+
+/* ------------TRAMA SECTION---------------------*/
+
+.section_trama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(0, 75, 147);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 75, 147, 1) 0%,
+    rgba(201, 0, 43, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 75, 147, 1) 0%,
+    rgba(201, 0, 43, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 75, 147, 1) 0%,
+    rgba(201, 0, 43, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004b93",endColorstr="#c9002b",GradientType=1);
+  height: 2898px;
+}
+
+.trama_text {
+  display: flex;
+  text-align: center;
+}
+
+.trama_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trama_text h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 50px;
+}
+
+.trama_text p {
+  text-align: center;
+  margin: 0 80px;
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 70px;
+  color: white;
+  padding: 0 220px;
+}
+
+.section_trama video {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  border-radius: 25px;
+}
+
+.section_trama button {
+  padding: 10px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #c9002b;
+  color: white;
+  font-family: ROboto;
+  cursor: pointer;
+  border: none;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.button_wiki :active {
+  background-color: #a20023;
+}
+
+/* ----------------------CAST----------------------------------*/
+.cast_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cast_card_container {display: flex;}
+.cast_immagini {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 70px;
+}
+.cast_card {
+  display: flex;flex-direction: column;align-items: center;
+}
+.cast_card img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cast_nomi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  padding: 0 70px;
+}
+
+.cast_nomi h2 {
+  font-family: Roboto;
+  color: white;
+  font-weight: lighter;
+}
+
+.John_text {
+  padding: 0 25px;
+}
+
+.Todd_text {
+  padding-right: -10px;
+}
+
+.Cindy_text {
+  padding: 0 18px;
+}
+
+.p_cast {
+  padding: 0 1200px;
+}
+
+.section_trama h1 {
+  margin-top: 250px;
+}
+
+.button_cast {
+  padding: 10px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #004b93;
+  color: white;
+  font-family: ROboto;
+  cursor: pointer;
+  border: none;
+  height: 60px;
+  border-radius: 20px;
+}
+
+/*-------------------------GALLERY--------------------------*/
+
+.section_home_gallery {
+  background-image: url(Immagini_progetto_sito/tile_mondrian.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+
+
+
+.over_sfondo{
+
+  max-width: 100%;
+  max-height:100%;
+  height: 80%;
+  width: 80%;
+
+}
+
+
+
+
+
+/* --------------------------FOOTER-------------------------------- */
+
+footer {
+  display: flex;
+  height: 350px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_caption {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  width: 30%;
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.logo_footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo_footer img {
+  height: 50px;
+}
+
+.footer_caption p {
+  font-family: Roboto-Medium;
+  font-weight: lighter;
+}
+
+.footer_menu a {
+  text-decoration: none;
+}
+
+.footer_menu a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_articoli a {
+  text-decoration: none;
+  color: black;
+  border-left: 3 px black solid;
+}
+
+.footer.articoli a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_menu h3 {
+  font-family: Roboto-Medium;
+  color: black;
+  font-weight: lighter;
+}
+
+.footer_articoli h3 {
+  font-family: Roboto-Medium;
+  font-weight: lighter;
+  color: black;
+}
+
+.footer_links_container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5vw;
+  width: 30vw;
+}
+
+.footer_menu,
+.footer_articoli {
+  border-left: 2px solid black;
+  padding-left: 10px;
+}
