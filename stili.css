@@ -1,7 +1,7 @@
 /* ---------STILI GENERALI--------- */
 
 body {
-  width:100%;
+  width: 100%;
   margin: 0;
   height: 100%;
 }
@@ -22,16 +22,16 @@ h1 {
 
 @font-face {
   font-family: Pepsi;
-  src: url(/Fonts_progetto_sito/PEPSI_pl.ttf);
+  src: url(/Fonts_progetto_sito_2/PEPSI_pl.ttf);
 }
 @font-face {
   font-family: Roboto;
-  src: url(/Fonts_progetto_sito/Roboto-Black.ttf);
+  src: url(/Fonts_progetto_sito_2/Roboto-Black.ttf);
 }
 
 @font-face {
   font-family: Roboto-Medium;
-  src: url(/Fonts_progetto_sito/Roboto-Medium.ttf);
+  src: url(/Fonts_progetto_sito_2/Roboto-Medium.ttf);
 }
 
 /*-------------MENU NAVIGAZIONE-------------*/
@@ -39,24 +39,27 @@ h1 {
 .header {
   height: 10vh;
   width: 100%;
-  display: flex;
   position: fixed;
   margin-bottom: 10vh;
   background-color: white;
   z-index: 2;
 }
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 94%;
+  margin-left: 6%;
+}
 
 .logo {
   height: 8vh;
-  padding-top: 1vh;
-  padding-left: 5vw;
 }
 
 .menu {
   line-height: 10vh;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
 }
 
 .menu div {
@@ -80,7 +83,10 @@ h1 {
   color: #c9002b;
   text-decoration: none;
 }
-
+.site_title {
+  display: flex;
+  align-items: center;
+}
 .Pepsi_red {
   display: inline;
   color: #c9002b;
@@ -103,8 +109,9 @@ h1 {
   display: block;
 }
 
-.button {
+button {
   height: 60px;
+  padding: 0 1vh;
   color: white;
   background-color: #c9002b;
   margin: none;
@@ -113,9 +120,12 @@ h1 {
   cursor: pointer;
   border: none;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button:active {
+button:active {
   background-color: #a20023;
 }
 
@@ -126,23 +136,21 @@ h1 {
   transform: translate(50%, -50%);
 }
 
-.flex {
-  display: flex;
-}
-
 .image_container {
   position: relative;
 }
 
 .arrow_icon {
+  margin: 1em 0em 1em 0.5em;
   height: 30px;
-  padding-top: 15px;
-  padding-right: 1vh;
 }
 
 .button_text {
+  color: inherit;
   line-height: 60px;
-  padding: 0 1vh;
+  font-family: Roboto;
+  font-size: 20px;
+  margin: 0;
 }
 
 /* ------------TRAMA SECTION---------------------*/
@@ -168,20 +176,17 @@ h1 {
     rgba(201, 0, 43, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004b93",endColorstr="#c9002b",GradientType=1);
-  height: 2898px;
+  margin-bottom: ;
 }
 
 .trama_text {
-  display: flex;
+  width: 88%;
   text-align: center;
-}
-
-.trama_text {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 250px;
 }
 
 .trama_text h1 {
@@ -195,13 +200,11 @@ h1 {
 
 .trama_text p {
   text-align: center;
-  margin: 0 80px;
+  margin-bottom: 70px;
   font-family: Roboto-Medium;
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 70px;
   color: white;
-  padding: 0 220px;
 }
 
 .section_trama video {
@@ -213,31 +216,18 @@ h1 {
   border-radius: 25px;
 }
 
-.section_trama button {
-  padding: 10px;
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  background-color: #c9002b;
-  color: white;
-  font-family: ROboto;
-  cursor: pointer;
-  border: none;
-  height: 60px;
-  border-radius: 20px;
-}
-
-.button_wiki :active {
-  background-color: #a20023;
-}
-
 /* ----------------------CAST----------------------------------*/
 .cast_container {
+  width: 88%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.cast_card_container {display: flex;}
+.cast_card_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .cast_immagini {
   display: flex;
   justify-content: space-between;
@@ -246,7 +236,10 @@ h1 {
   padding: 0 70px;
 }
 .cast_card {
-  display: flex;flex-direction: column;align-items: center;
+  display: flex;
+  width: 225px;
+  flex-direction: column;
+  align-items: center;
 }
 .cast_card img {
   height: 90px;
@@ -270,27 +263,10 @@ h1 {
   color: white;
   font-weight: lighter;
 }
-
-.John_text {
-  padding: 0 25px;
-}
-
-.Todd_text {
-  padding-right: -10px;
-}
-
-.Cindy_text {
-  padding: 0 18px;
-}
-
 .p_cast {
-  padding: 0 1200px;
+  text-align: center;
+  width: 50%;
 }
-
-.section_trama h1 {
-  margin-top: 250px;
-}
-
 .button_cast {
   padding: 10px;
   font-size: 1.2em;
@@ -315,21 +291,12 @@ h1 {
   height: 800px;
 }
 
-
-
-
-.over_sfondo{
-
+.over_sfondo {
   max-width: 100%;
-  max-height:100%;
+  max-height: 100%;
   height: 80%;
   width: 80%;
-
 }
-
-
-
-
 
 /* --------------------------FOOTER-------------------------------- */
 
