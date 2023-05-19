@@ -1,5 +1,9 @@
 /* ---------STILI GENERALI--------- */
 
+*{
+  border: 1px solid green;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -123,10 +127,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s;
 }
 
 button:active {
   background-color: #a20023;
+}
+
+button:hover {
+transform: scale(1.2);
 }
 
 .overlay {
@@ -196,6 +205,7 @@ button:active {
   text-align: center;
   margin-bottom: 70px;
   font-size: 50px;
+  margin-top: 100px;
 }
 
 .trama_text p {
@@ -228,6 +238,13 @@ button:active {
   width: 100%;
   justify-content: space-between;
 }
+
+.cast_title{
+  color: white;
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
 .cast_immagini {
   display: flex;
   justify-content: space-between;
@@ -240,7 +257,15 @@ button:active {
   width: 225px;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 15px;
 }
+
+.cast_card h2{
+  color: white;
+  font-family: Roboto-Medium;
+  
+}
+
 .cast_card img {
   height: 90px;
   width: 90px;
@@ -266,19 +291,20 @@ button:active {
 .p_cast {
   text-align: center;
   width: 50%;
-}
-.button_cast {
-  padding: 10px;
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  background-color: #004b93;
+  margin-bottom: 70px;
+  font-family: Roboto-Medium;
   color: white;
-  font-family: ROboto;
-  cursor: pointer;
-  border: none;
-  height: 60px;
-  border-radius: 20px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.button_cast {
+  background-color: #004b93;
+  margin-bottom: 300px;
+}
+
+.button_cast:active{
+  background-color: #013c74;
 }
 
 /*-------------------------GALLERY--------------------------*/
@@ -296,6 +322,10 @@ button:active {
   max-height: 100%;
   height: 80%;
   width: 80%;
+}
+
+.button_gallery{
+  align-items: center;
 }
 
 /* --------------------------FOOTER-------------------------------- */
@@ -334,10 +364,12 @@ footer {
 .footer_caption p {
   font-family: Roboto-Medium;
   font-weight: lighter;
+  color: black;
 }
 
 .footer_menu a {
   text-decoration: none;
+  font-family: Roboto-Medium;
 }
 
 .footer_menu a:visited {
@@ -349,6 +381,7 @@ footer {
   text-decoration: none;
   color: black;
   border-left: 3 px black solid;
+  font-family: Roboto-Medium;
 }
 
 .footer.articoli a:visited {
@@ -358,14 +391,14 @@ footer {
 
 .footer_menu h3 {
   font-family: Roboto-Medium;
-  color: black;
-  font-weight: lighter;
+  color:#c9002b;
+  font-weight: bold;
 }
 
 .footer_articoli h3 {
   font-family: Roboto-Medium;
-  font-weight: lighter;
-  color: black;
+  font-weight: bold;
+  color:#004b93;
 }
 
 .footer_links_container {
@@ -379,4 +412,12 @@ footer {
 .footer_articoli {
   border-left: 2px solid black;
   padding-left: 10px;
+}
+
+.footer_menu div{
+  margin-bottom: 10px;
+}
+
+.footer_articoli div{
+  margin-bottom: 10px;
 }
