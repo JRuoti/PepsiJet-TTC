@@ -432,3 +432,70 @@ footer {
   margin-bottom: 10px;
 }
 
+/* --------------------------LA SERIE PAGE-------------------------------- */
+
+.start_foto{
+  position: relative;
+  display: block;
+}
+
+.start_foto img{
+  display: block;
+}
+
+
+.start_foto h1{
+  position: absolute;
+  top: 85%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+
+/* --------------------------LA SERIE- CAST- PAGE-------------------------------- */
+
+.Laserie_trama{
+  background: rgb(0,75,147);
+  background: -moz-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004b93",endColorstr="#c9002b",GradientType=1); 
+  
+}
+
+
+
+.Laserie_trama h1{
+  font-family: Pepsi;
+  color: white;
+  font-size: 50px;
+
+}
+
+.Laserie_trama p{
+  font-family: Roboto-Medium;
+  color: white;
+}
+
+
+
+/* --------------------------LA SERIE -CAST- PAGE-------------------------------- */
+
+.Laserie_cast img{
+ width: 100%;
+
+}
+
+
+/* --------------------------LA SERIE -CURIOSITY- PAGE-------------------------------- */
+
+.Laserie_curiosity {
+  background: rgb(0,75,147);
+  background: -moz-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004b93",endColorstr="#c9002b",GradientType=1); 
+}
